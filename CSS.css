@@ -1,0 +1,261 @@
+body,h3,form,footer
+{
+	font-family:Arial,Helvetica,sans-serif;
+	font-size:15px;
+	line-height:1.5;
+}
+
+
+
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: black;
+   color: white;
+   text-align: center;
+}
+
+
+/* ******************
+		*Label *
+ * ******************/
+.Spot {
+  border-radius: 4px;
+  background-color: #FFFF00;
+  border: none;
+  color: #000000;
+  text-align: center;
+  font-size: 18px;
+  padding: 5px;
+  width: 70px;
+  height:40px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 20px;
+  
+  
+}
+
+.Spot  span  {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  alignment: center;
+}
+
+ .Spot span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+ .Spot:hover span  {
+  padding-right: 10px;
+}
+
+.Spot:hover Span:after  {
+  opacity: 1;
+  right: 0;
+}
+/* ******************
+		*navbar *
+ * ******************/
+.topnav {
+  overflow: hidden;
+  background-color:#f2f2f2;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #000000;
+  text-align: center;
+  padding: 14px 70px;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight:bold;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: ;
+  color: 	#000000;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 17px;  
+  border: none;
+  outline: none;
+  color: #000000;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+   font-weight:bold;
+}
+
+ .dropdown:hover .dropbtn {
+  background-color: #ddd;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+/* ******************
+		*search *
+ * ******************/
+.topnav .search-container {
+  float: right;
+}
+
+.topnav input[type=text] {
+  padding: 4px;
+  margin-top: 5.95px;
+  font-size: 17px;
+  border: none;
+}
+
+.topnav .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 30px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+  background: #ddd;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav .search-container {
+    float: none;
+  }
+  .topnav a, .topnav input[type=text], .topnav .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid #000000;  
+  }
+}
+/*Collapsible*/
+
+.collapsible {
+  background-color: #ddd;
+  color: black;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+   border:1px solid #f1f1f1;
+  
+}
+
+.apple, .collapsible:hover {
+  background-color: #f1f1f1;
+   border:1px solid #ddd;
+   font-weight:bold;
+   font-size:large;
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: black;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+ 
+}
+
+.apple:after {
+  content: "\2212";
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+}
+/*Table*/
+
+table, th, td {
+  border: 1px solid black;
+  border-spacing: 0px;
+  text-align: center;
+}
